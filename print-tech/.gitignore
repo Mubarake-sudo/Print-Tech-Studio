@@ -1,0 +1,4 @@
+public/media/raw/*
+!public/media/raw/.gitkeep
+node_modules
+.next
