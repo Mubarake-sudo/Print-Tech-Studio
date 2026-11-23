@@ -8,92 +8,253 @@ export type Media =
 export interface Project {
   id: string;
   title: string;
+  subtitle?: string;
   category: Category;
+  location?: string;
   materials: string[];
   techniques: string[];
   description: string;
+  challenge?: string;
+  solution?: string;
+  highlights?: string[];
   image: string;
   media?: Media[];
 }
 
-// 1. SECTION NOS RÉALISATIONS (6 projets synchronisés avec les images et vidéos optimisées)
+// 1. SECTION NOS RÉALISATIONS (Descriptions complètes, techniques et détaillées pour chaque projet)
 export const projects: Project[] = [
   {
     id: "enseigne-lumineuse-pharmacie-bingerville",
-    title: "Pharmacie Bingerville",
+    title: "Pharmacie du Palais de Justice",
+    subtitle: "Enseigne lumineuse monumentale & caisson rétroéclairé haute visibilité",
     category: "Enseignes lumineuses",
-    materials: ["Plexiglas diffusant", "LED haute intensité", "Alucobond"],
-    techniques: ["Découpe laser haute précision", "Rétroéclairage LED étanche", "Assemblage structure"],
-    description: "Conception et installation d'une enseigne lumineuse grand format pour la Pharmacie Bingerville, garantissant un repérage immédiat de jour comme de nuit.",
+    location: "Bingerville, Abidjan (Côte d'Ivoire)",
+    materials: [
+      "Plexiglas coulé diffusant 4mm (anti-jaunissement UV)",
+      "Panneaux composites Alucobond 4mm laqué blanc & vert médical",
+      "Modules LED SMD étanches IP67 basse consommation 12V",
+      "Structure mécano-soudée acier traité anti-corrosion"
+    ],
+    techniques: [
+      "Découpe numérique laser assistée par ordinateur",
+      "Rétroéclairage LED uniforme sans zones d'ombre",
+      "Thermoformage et pliage de chants étanches",
+      "Raccordement électrique sécurisé avec boîtiers étanches IP68"
+    ],
+    description:
+      "Conception, usinage en atelier et pose intégrale d'une enseigne lumineuse grand format pour la Pharmacie du Palais de Justice à Bingerville. Le projet a été pensé pour conférer au bâtiment une présence visuelle prestigieuse et statutaire, garantissant un repérage immédiat de jour comme de nuit à plus de 200 mètres le long de l'axe principal.",
+    challenge:
+      "Assurer une luminosité puissante et homogène sur l'ensemble de la longueur sans aucun effet de halo ou de point chaud, tout en garantissant une résistance absolue face aux fortes chaleurs et à l'humidité tropicale d'Abidjan.",
+    solution:
+      "Intégration d'une double ligne de modules LED haute luminescence avec lentilles de diffusion grand angle 160°, montés sur un châssis ventilé en aluminium avec fixations renforcées contre les vents côtiers.",
+    highlights: [
+      "Visibilité nocturne longue portée (> 200 mètres)",
+      "Consommation électrique optimisée (-65% vs néon traditionnel)",
+      "Étanchéité certifiée IP67 adaptée au climat équatorial",
+      "Croix et typographies conformes aux normes de signalétique officinale"
+    ],
     image: "/media/optimized/images/enseigne-lumineuse-pharmacie-bingerville.webp",
     media: [
-      { type: "image", src: "/media/optimized/images/enseigne-lumineuse-pharmacie-bingerville.webp", alt: "Enseigne lumineuse de la Pharmacie Bingerville réalisée par PRINT-TECH STUDIO" },
-      { type: "video", src: "/media/optimized/videos/v1.mp4", poster: "/media/optimized/videos/v1.jpg", title: "Pose et allumage de l'enseigne Pharmacie Bingerville" }
+      {
+        type: "image",
+        src: "/media/optimized/images/enseigne-lumineuse-pharmacie-bingerville.webp",
+        alt: "Enseigne lumineuse monumentale de la Pharmacie du Palais de Justice à Bingerville réalisée par PRINT-TECH STUDIO"
+      }
     ]
   },
   {
     id: "habillage-facade-alucobond-foodivoire",
-    title: "FoodIvoire",
+    title: "Façade Commerciale FoodIvoire",
+    subtitle: "Habillage architectural en panneaux composites Alucobond & calepinage sur mesure",
     category: "Façades Alucobond",
-    materials: ["Panneaux Alucobond composite", "Ossature aluminium", "Fixations invisibles"],
-    techniques: ["Rainurage & pliage CNC", "Fraisage d'angles", "Pose sur ossature ventilée"],
-    description: "Habillage intégral de façade commerciale en panneaux composites Alucobond pour FoodIvoire. Finition moderne, résistance durable aux UV et au climat d'Abidjan.",
+    location: "Abidjan, Côte d'Ivoire",
+    materials: [
+      "Panneaux Alucobond 4mm avec noyau minéral ignifuge",
+      "Finition laquée PVDF multicouche haute résistance UV",
+      "Ossature secondaire en profilés aluminium anodisé",
+      "Joints d'étanchéité élastomère & visserie inox A2 invisible"
+    ],
+    techniques: [
+      "Usinage et rainurage en V sur fraiseuse CNC grand format",
+      "Pliage mécanique de cassettes aux angles nets 90°",
+      "Calepinage au niveau laser rotatif millimétré",
+      "Montage sur système de façade rideau ventilée"
+    ],
+    description:
+      "Transformation architecturale complète et modernisation de la façade de l'enseigne FoodIvoire. L'intervention métamorphose un bâtiment urbain standard en un complexe commercial moderne aux lignes nettes et épurées, incarnant le dynamisme et l'hygiène de la marque agroalimentaire.",
+    challenge:
+      "Rattraper d'importants faux aplombs sur la maçonnerie existante tout en assurant un alignement rigoureusement parfait des joints creux sur toute la périphérie du bâtiment.",
+    solution:
+      "Mise en œuvre d'une ossature d'adaptation réglable en 3 dimensions avec cassettes composites façonnées sur mesure en atelier, offrant une ventilation naturelle réduisant la chaleur transmise au bâtiment.",
+    highlights: [
+      "Finition ultra-moderne sans aucune vis ni fixation apparente",
+      "Bouclier thermique isolant réduisant l'échauffement intérieur",
+      "Garantie anti-décoloration et résistance aux intempéries",
+      "Valorisation instantanée de l'attractivité commerciale"
+    ],
     image: "/media/optimized/images/habillage-facade-alucobond-foodivoire.webp",
     media: [
-      { type: "image", src: "/media/optimized/images/habillage-facade-alucobond-foodivoire.webp", alt: "Habillage de façade composite Alucobond FoodIvoire par PRINT-TECH STUDIO" },
-      { type: "video", src: "/media/optimized/videos/v2.mp4", poster: "/media/optimized/videos/v2.jpg", title: "Installation des panneaux Alucobond FoodIvoire" }
+      {
+        type: "image",
+        src: "/media/optimized/images/habillage-facade-alucobond-foodivoire.webp",
+        alt: "Habillage intégral de façade commerciale Alucobond FoodIvoire par PRINT-TECH STUDIO"
+      }
     ]
   },
   {
     id: "lettres-3d-decoupe-cnc-maison-sanaa",
-    title: "Maison Sanaa",
+    title: "Maison Sanaa — Enseigne & Lettres 3D",
+    subtitle: "Usinage numérique CNC de précision & rétroéclairage halo or raffiné",
     category: "Lettres 3D & CNC",
-    materials: ["Acrylique haute densité", "Inox brossé", "Modules LED 12V"],
-    techniques: ["Découpe numérique CNC", "Chants polis miroir", "Rétroéclairage halo indirect"],
-    description: "Fabrication de lettres 3D en relief avec usinage CNC au millimètre pour la Maison Sanaa, apportant une identité élégante, statutaire et raffinée.",
+    location: "Zone 4, Abidjan (Côte d'Ivoire)",
+    materials: [
+      "Acrylique coulé haute densité 15mm poli miroir",
+      "Placage inox brossé avec traitement anti-oxydation",
+      "Micro-modules LED blanc chaud 3000K spécial halo",
+      "Entretoises de fixation usinées en laiton massif"
+    ],
+    techniques: [
+      "Fraisage numérique CNC à haute vitesse de rotation",
+      "Polissage thermique des chants au diamant",
+      "Laquage métallisé or avec vernis polyuréthane de protection",
+      "Installation avec gabarit de perçage au micron"
+    ],
+    description:
+      "Création sur mesure de l'identité en relief pour l'enseigne de prestige Maison Sanaa. Les lettres découpées en 3D apportent une signature haut de gamme et sophistiquée, idéale pour un positionnement luxe. L'éclairage indirect crée une aura dorée feutrée qui sublime la texture du mur d'accueil.",
+    challenge:
+      "Réaliser des découpes calligraphiques extrêmement fines et complexes tout en conservant une rigidité structurelle parfaite et une diffusion lumineuse sans ombrage.",
+    solution:
+      "Usinage multi-passes avec fraises hélicoïdales de petit diamètre et implantation de mini-LEDs réparties dans un caisson creusé à l'arrière de chaque caractère.",
+    highlights: [
+      "Effet de relief et de lévitation murale saisissant",
+      "Ambiance lumineuse halo chaleureuse et non éblouissante",
+      "Finition artisanale d'orfèvre sur acrylique poli",
+      "Consommation minime (moins de 45 Watts au total)"
+    ],
     image: "/media/optimized/images/lettres-3d-decoupe-cnc-maison-sanaa.webp",
     media: [
-      { type: "image", src: "/media/optimized/images/lettres-3d-decoupe-cnc-maison-sanaa.webp", alt: "Lettres 3D en relief usinées par découpe CNC pour Maison Sanaa" },
-      { type: "video", src: "/media/optimized/videos/v3.mp4", poster: "/media/optimized/videos/v3.jpg", title: "Découpe CNC en atelier pour Maison Sanaa" }
+      {
+        type: "image",
+        src: "/media/optimized/images/lettres-3d-decoupe-cnc-maison-sanaa.webp",
+        alt: "Lettres 3D en relief découpées sur CNC pour Maison Sanaa par PRINT-TECH STUDIO"
+      }
     ]
   },
   {
     id: "habillage-vitrine-raffinement-boutique",
     title: "Raffinement Boutique",
+    subtitle: "Enseigne bandeau en relief & habillage de devanture commerciale",
     category: "Vitrines & Panneaux",
-    materials: ["Vinyle polymère haute adhérence", "Film sablé décoratif", "Filtre anti-décoloration UV"],
-    techniques: ["Impression grand format éco-solvant", "Lamination protectrice mate", "Pose sans bulle"],
-    description: "Habillage graphique complet de la devanture et des vitrines de Raffinement Boutique, conjuguant attractivité commerciale et intimité.",
+    location: "Koumassi Remblais, Carrefour Ibo, Abidjan",
+    materials: [
+      "Bandeau caisson Alucobond noir mat satiné",
+      "Lettres relief thermo-découpées finition or scintillant",
+      "Vinyle adhésif polymère haute adhérence avec filtre anti-UV",
+      "Spots LED orientables intégrés sous corniche"
+    ],
+    techniques: [
+      "Impression numérique haute définition 1200 DPI encres éco-solvants",
+      "Lamination protectrice mate anti-reflets et anti-rayures",
+      "Découpe assistée par ordinateur de lettrages adhésifs",
+      "Pose sur vitrage sous tension constante sans bulle d'air"
+    ],
+    description:
+      "Conception globale de l'habillage de la façade et des vitrines de Raffinement Boutique à Koumassi. Le bandeau supérieur noir profond avec son logo couronné et ses lettres dorées offre un contraste saisissant, tandis que les informations de contact et le design des vitrages accueillent la clientèle avec élégance.",
+    challenge:
+      "Protéger les articles de mode exposés en vitrine contre la décoloration solaire tout en maintenant une visibilité commerciale percutante et une parfaite lisibilité des numéros de téléphone.",
+    solution:
+      "Combinaison d'un bandeau rigide en composite Alucobond thermo-résistant et de films vitrophanie protecteurs filtrant 98% des rayons ultraviolets.",
+    highlights: [
+      "Impact visuel fort dès le premier coup d'œil dans la rue",
+      "Excellente lisibilité des coordonnées commerciales et réseaux",
+      "Protection solaire des vêtements et mannequins exposés",
+      "Tenue garantie dans le temps sans décollement ni décoloration"
+    ],
     image: "/media/optimized/images/habillage-vitrine-raffinement-boutique.webp",
     media: [
-      { type: "image", src: "/media/optimized/images/habillage-vitrine-raffinement-boutique.webp", alt: "Habillage décoratif et signalétique de vitrine Raffinement Boutique" },
-      { type: "video", src: "/media/optimized/videos/v5.mp4", poster: "/media/optimized/videos/v5.jpg", title: "Pose d'adhésifs grand format vitrine" }
+      {
+        type: "image",
+        src: "/media/optimized/images/habillage-vitrine-raffinement-boutique.webp",
+        alt: "Habillage de devanture et vitrine pour Raffinement Boutique à Abidjan par PRINT-TECH STUDIO"
+      }
     ]
   },
   {
     id: "totem-publicitaire-grand-format-marjorel",
-    title: "Totem Marjorel",
+    title: "Totem Signalétique Marjorel",
+    subtitle: "Totem autoportant double-face grand format & intégration LED",
     category: "Vitrines & Panneaux",
-    materials: ["Acier tubulaire galvanisé", "Tôles alu thermo-laquées", "Profils lumineux LED"],
-    techniques: ["Châssis mécano-soudé", "Découpe laser", "Scellement chimique au sol"],
-    description: "Conception, fabrication et implantation sur site d'un totem signalétique vertical grand format pour Marjorel, assurant un repérage à 360 degrés.",
+    location: "Abidjan, Côte d'Ivoire",
+    materials: [
+      "Châssis interne tubulaire en acier galvanisé à chaud 60x60mm",
+      "Habillage externe en tôles aluminium thermo-laquées 2mm",
+      "Faces diffusantes en PMMA opale résistant aux chocs",
+      "Platines de fixation avec tiges filetées haute résistance M20"
+    ],
+    techniques: [
+      "Calcul des charges aux vents et dimensionnement de structure",
+      "Découpe laser industrielle des lettrages et logos",
+      "Rétroéclairage intérieur étanche par réglettes LED haute efficacité",
+      "Scellement chimique et coulage de massif béton armé"
+    ],
+    description:
+      "Fabrication d'atelier et érection sur site d'un totem signalétique vertical monumental pour le groupe Marjorel. Cet élément majeur d'orientation permet aux visiteurs, clients et collaborateurs d'identifier instantanément le complexe d'entreprises dès l'entrée du site.",
+    challenge:
+      "Garantir une stabilité aérodynamique sans faille face aux intempéries violentes et rafales de vent de saison des pluies, tout en conservant une ligne fine et esthétique.",
+    solution:
+      "Ancrage sur massif en béton armé avec structure mécano-soudée contreventée et trappe de visite technique discrète pour faciliter les opérations de maintenance électrique.",
+    highlights: [
+      "Repère urbain et signalétique à 360 degrés sur axe passant",
+      "Structure ultra-robuste conçue pour une longévité décennale",
+      "Éclairage bi-face homogène basse consommation",
+      "Finition thermolaquée anti-corrosion adaptée au milieu lagunaire"
+    ],
     image: "/media/optimized/images/totem-publicitaire-grand-format-marjorel.webp",
     media: [
-      { type: "image", src: "/media/optimized/images/totem-publicitaire-grand-format-marjorel.webp", alt: "Totem publicitaire vertical grand format Marjorel par PRINT-TECH STUDIO" },
-      { type: "video", src: "/media/optimized/videos/v7.mp4", poster: "/media/optimized/videos/v7.jpg", title: "Implantation et allumage du totem Marjorel" }
+      {
+        type: "image",
+        src: "/media/optimized/images/totem-publicitaire-grand-format-marjorel.webp",
+        alt: "Totem signalétique autoportant grand format Marjorel par PRINT-TECH STUDIO"
+      }
     ]
   },
   {
     id: "enseigne-neon-led-k-lounge",
-    title: "K-Lounge",
+    title: "Enseigne Néon LED K-Lounge",
+    subtitle: "Création artistique néon flexible silicone & variateur d'ambiance",
     category: "Enseignes lumineuses",
-    materials: ["Néon flexible LED silicone nouvelle génération", "Support acrylique transparent 8mm", "Transformateur 12V"],
-    techniques: ["Façonnage thermique", "Gravure CNC pour passage de fils", "Fixation sur entretoises inox"],
-    description: "Création artistique d'une enseigne néon LED sur mesure pour le K-Lounge, ambiance lumineuse nocturne spectaculaire et consommation électrique maîtrisée.",
+    location: "Marcory / Zone 4, Abidjan (Côte d'Ivoire)",
+    materials: [
+      "Néon flexible LED silicone nouvelle génération (flex neon 12V)",
+      "Plaque support en acrylique optique ultra-transparent 8mm",
+      "Câblage argent invisible & connecteurs étanches",
+      "Variateur électronique d'intensité lumineuse télécommandé"
+    ],
+    techniques: [
+      "Gravure numérique de rainures guides sur machine CNC",
+      "Façonnage thermique et collage polymère des néons flexibles",
+      "Soudures électroniques protégées sous gaine thermo-rétractable",
+      "Fixation murale sur entretoises inox design décollées du mur"
+    ],
+    description:
+      "Conception artistique et confection sur mesure d'une enseigne néon LED pour le K-Lounge. Cette pièce lumineuse unique insuffle une atmosphère nocturne contemporaine et branchée, devenant le point d'attraction visuel principal pour les photos et partages des clients sur les réseaux sociaux.",
+    challenge:
+      "Obtenir des courbes calligraphiques parfaites sans rupture de flux lumineux et dissimuler tous les fils d'alimentation sur un fond acrylique totalement transparent.",
+    solution:
+      "Fraisage arrière au dos du plexiglas pour encastrer le micro-câblage et utilisation d'un néon silicone souple diffusant la lumière à 180° sans aucun point sombre.",
+    highlights: [
+      "Consommation électrique ultra-basse (12V sécurisé, sans verre)",
+      "Attractivité visuelle maximale, optimisée pour Instagram & TikTok",
+      "Durée de vie supérieure à 50 000 heures de fonctionnement",
+      "Variateur pour ajuster l'intensité entre le jour et la nuit"
+    ],
     image: "/media/optimized/images/enseigne-neon-led-k-lounge.webp",
     media: [
-      { type: "image", src: "/media/optimized/images/enseigne-neon-led-k-lounge.webp", alt: "Enseigne lumineuse néon LED sur mesure pour K-Lounge" },
-      { type: "video", src: "/media/optimized/videos/v6.mp4", poster: "/media/optimized/videos/v6.jpg", title: "Effets lumineux et finition néon LED K-Lounge" }
+      {
+        type: "image",
+        src: "/media/optimized/images/enseigne-neon-led-k-lounge.webp",
+        alt: "Enseigne lumineuse néon LED d'ambiance pour K-Lounge par PRINT-TECH STUDIO"
+      }
     ]
   }
 ];
