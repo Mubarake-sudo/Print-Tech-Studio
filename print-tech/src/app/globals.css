@@ -1,11 +1,13 @@
 @tailwind base;@tailwind components;@tailwind utilities;
-html{overflow-x:hidden;background:#09090B}
-body{overflow-x:hidden;font-family:var(--font-jakarta),sans-serif;color:#F7F7F5}
-h1,h2,h3{font-family:var(--font-jakarta),sans-serif;font-weight:800;letter-spacing:-.02em}
-.h1{font-size:clamp(2.4rem,9vw,6.5rem);line-height:1}
-.h2{font-size:clamp(1.9rem,6vw,4rem);line-height:1.05}
+html{overflow-x:hidden;background:#09090B;scroll-behavior:auto}
+body{overflow-x:hidden;font-family:var(--font-inter),sans-serif;color:#F7F7F5}
+h1,h2,h3{font-family:var(--font-jakarta),sans-serif}
+.h1{font-weight:800;font-size:clamp(2.1rem,4.6vw + .4rem,3.75rem);line-height:1.12;letter-spacing:-1px}
+.h2{font-weight:700;font-size:clamp(1.75rem,2.4vw + 1rem,2.6rem);line-height:1.2;letter-spacing:-.5px}
+.eyebrow{font-family:var(--font-inter);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:3px}
+.lead{font-size:clamp(1.0625rem,.4vw + 1rem,1.125rem);line-height:1.6;color:#D1D5DB}
 @layer components{
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:44px;min-width:44px;padding:.75rem 1.5rem;font-weight:600;border-radius:9999px;transition:all .5s cubic-bezier(.22,1,.36,1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:44px;min-width:44px;padding:.75rem 1.5rem;font-weight:600;font-size:15px;letter-spacing:.2px;border-radius:9999px;transition:all .5s cubic-bezier(.22,1,.36,1)}
 .btn-gold{background:linear-gradient(135deg,#D4AF37,#E5C76B);color:#09090B}.btn-gold:hover{filter:brightness(1.08);transform:translateY(-2px)}
 .btn-line{border:1px solid #D4AF37;color:#D4AF37}.btn-line:hover{background:#D4AF37;color:#09090B}
 }

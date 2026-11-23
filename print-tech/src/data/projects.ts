@@ -23,3 +23,12 @@ export const comparisons = [
   { id:"c2", title:"Vitrine commerciale", before:"", after:"" },
   { id:"c3", title:"Enseigne lumineuse", before:"", after:"" },
 ];
+
+// VIDÉOS (section "Nos vidéos") : après `npm run optimize:media`, renseignez src (.mp4) et poster (.jpg). portrait:true = format vertical.
+export const videos = [
+  { id:"v1", title:"Pose d'une enseigne lumineuse", src:"", poster:"" },
+  { id:"v2", title:"Habillage de façade Alucobond", src:"", poster:"" },
+  { id:"v3", title:"Découpe CNC en atelier", src:"", poster:"" },
+  { id:"v4", title:"Lettres 3D rétroéclairées", src:"", poster:"" },
+  { id:"v5", title:"Habillage de vitrine", src:"", poster:"" },
+]; // Toutes les cartes sont en 16:9 et défilent horizontalement. Ajoutez autant de lignes que vous voulez.

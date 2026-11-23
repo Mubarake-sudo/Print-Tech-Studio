@@ -18,3 +18,6 @@ Fond `#09090B` (ink), sections claires `#F7F7F5` / `#FFFFFF`, accent unique or `
 3. Résultat : images `.webp` (max 1920px) dans `public/media/optimized/images/`; vidéos `.mp4` H.264/yuv420p (max 1280px, faststart) + miniature `.jpg` dans `public/media/optimized/videos/`; la liste des chemins est dans `public/media/optimized/manifest.json`.
 4. Dans `src/data/projects.ts`, renseignez `media` d'un projet avec les chemins du manifest (`{type:"image",src}` ou `{type:"video",src,poster}`). La première entrée sert de couverture. Les vidéos ne se chargent qu'au clic (aucun autoplay).
 5. Pour l'Avant / Après, utilisez les chemins `.webp` dans `comparisons`.
+
+## v3 (design maquette)
+Hero responsive : ordinateur `hero.webp` (hauteur bornée, texte collé à la photo), mobile `hero-mobile.webp` en haut puis texte dessous. Typo : Inter (surtitre, texte, menu, boutons) et Plus Jakarta Sans (H1 800, H2 700) via classes `.eyebrow`, `.h1`, `.h2`, `.lead`, `.btn`. Logo : composant `Logo.tsx` (SVG). Section vidéos : `Videos.tsx` (style cartes arrondies + bouton play).

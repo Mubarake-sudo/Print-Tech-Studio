@@ -1,9 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
-import Image from "next/image";
-import { Menu, X, Phone, MessageCircle, Facebook, Instagram, Music2, ArrowRight } from "lucide-react";
-import { siteConfig, waLink } from "@/data/siteConfig";
-const links = [["Accueil","top"],["À propos","a-propos"],["Expertise","expertise"],["Réalisations","realisations"],["Processus","processus"],["Pourquoi nous choisir ?","pourquoi"],["Contact","contact"]];
+import Logo from "./Logo";
+import { TikTokIcon } from "./Icons";
+import { Menu, X, Phone, MessageCircle, Facebook, Instagram, ArrowRight } from "lucide-react";
+import { siteConfig, waLink, navLinks } from "@/data/siteConfig";
+const links = navLinks;
 export default function Navbar() {
   const [open,setOpen] = useState(false);
   const [solid,setSolid] = useState(false);
@@ -17,8 +18,8 @@ export default function Navbar() {
   }, []);
   return <>
     <header className={`fixed top-0 inset-x-0 z-50 flex items-center justify-between px-4 lg:px-10 py-3 transition-colors duration-500 ${solid?"bg-ink/90 backdrop-blur":"bg-transparent"}`}>
-      <a href="#top" aria-label="Accueil"><Image src="/images/logo-print-tech.png" alt="PRINT-TECH STUDIO" width={160} height={84} className="h-12 lg:h-14 w-auto" priority/></a>
-      <nav className="hidden lg:flex gap-7 text-sm">{links.map(([l,id])=><a key={id} href={`#${id}`} className={`py-2 border-b-2 transition-colors duration-500 ${active===id?"text-gold2 border-gold":"border-transparent hover:text-gold2"}`}>{l}</a>)}</nav>
+      <a href="#top" aria-label="Accueil"><Logo className="h-12 lg:h-14 w-auto"/></a>
+      <nav className="hidden lg:flex gap-7 text-sm">{links.map(([l,id])=><a key={id} href={`#${id}`} className={`py-2 text-[15px] font-medium border-b-2 transition-colors duration-500 ${active===id?"text-gold2 border-gold":"border-transparent hover:text-gold2"}`}>{l}</a>)}</nav>
       <a href={waLink(siteConfig.phones[0].wa)} className="btn btn-gold hidden lg:inline-flex !py-2.5 text-sm">Demander un devis <ArrowRight size={16}/></a>
       <button aria-label="Menu" className="lg:hidden w-11 h-11 grid place-items-center text-gold" onClick={()=>setOpen(true)}><Menu/></button>
     </header>
@@ -30,7 +31,7 @@ export default function Navbar() {
         <div className="flex gap-3 pt-2">
           <a className="btn btn-line" aria-label="Facebook" href={siteConfig.socials.facebook}><Facebook size={18}/></a>
           <a className="btn btn-line" aria-label="Instagram" href={siteConfig.socials.instagram}><Instagram size={18}/></a>
-          <a className="btn btn-line" aria-label="TikTok" href={siteConfig.socials.tiktok}><Music2 size={18}/></a>
+          <a className="btn btn-line" aria-label="TikTok" href={siteConfig.socials.tiktok}><TikTokIcon/></a>
         </div>
       </div>
     </div>

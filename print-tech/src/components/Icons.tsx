@@ -1,0 +1,1 @@
+export const TikTokIcon = ({ size=18 }:{ size?:number }) => <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden><path d="M16.5 3c.3 2.3 1.7 3.9 4 4.1v3.1c-1.4 0-2.8-.4-4-1.2v6.2c0 3.5-2.8 6.3-6.3 6.3S3.9 19.7 3.9 16.2s2.8-6.3 6.3-6.3c.3 0 .6 0 .9.1v3.2c-.3-.1-.6-.2-.9-.2-1.8 0-3.2 1.4-3.2 3.2s1.4 3.2 3.2 3.2 3.2-1.4 3.2-3.2V3h3.1z"/></svg>;

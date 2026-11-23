@@ -13,7 +13,8 @@ export const siteConfig = {
     instagram:"https://www.instagram.com/studioprinttech?lqvp=MWg0ZHVpemxrZWtkNg==",
   },
   heroVideo:"", // ex : "/media/optimized/videos/presentation.mp4" (+ heroPoster) pour activer "Voir la vidéo"
-  heroPoster:"/images/hero.jpg",
+  heroPoster:"/images/hero.webp",
   defaultMessage:"Bonjour PRINT-TECH STUDIO, je souhaite un devis pour un projet de communication visuelle / signalétique.",
 };
 export const waLink = (wa:string, msg:string = siteConfig.defaultMessage) => `https://wa.me/${wa}?text=${encodeURIComponent(msg)}`;
+export const navLinks = [["Accueil","top"],["À propos","a-propos"],["Expertise","expertise"],["Réalisations","realisations"],["Processus","processus"],["Pourquoi nous choisir ?","pourquoi"],["Contact","contact"]];

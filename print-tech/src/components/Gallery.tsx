@@ -24,8 +24,8 @@ export default function Gallery() {
     <MaskTitle className="h2 mb-8" text="Nos réalisations"/>
     <div className="flex flex-wrap gap-2 mb-8">{["Tout",...categories].map(c=><button key={c} onClick={()=>setF(c)} className={`btn !py-2 border ${f===c?"bg-ink text-gold border-ink":"border-ink/20"}`}>{c}</button>)}</div>
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{list.map(p=><button key={p.id} onClick={()=>setSel(p)} className="text-left group">
-      <div className="relative aspect-[4/3] bg-ink overflow-hidden">{coverOf(p)?<Image src={coverOf(p)!} alt={p.title} fill className="object-cover transition-transform duration-700 group-hover:scale-105" sizes="(max-width:768px) 100vw, 33vw"/>:<div className="absolute inset-0 grid place-items-center text-gold/60 text-xs tracking-widest">PHOTO À AJOUTER</div>}</div>
-      <h3 className="mt-3 font-bold">{p.title}</h3><p className="text-sm text-ink/60">{p.category}</p></button>)}</div>
+      <div className="relative aspect-[4/3] bg-ink overflow-hidden rounded-2xl">{coverOf(p)?<Image src={coverOf(p)!} alt={p.title} fill className="object-cover transition-transform duration-700 group-hover:scale-105" sizes="(max-width:768px) 100vw, 33vw"/>:<div className="absolute inset-0 grid place-items-center text-gold/60 text-xs tracking-widest">PHOTO À AJOUTER</div>}</div>
+      <h3 className="mt-3 font-bold">{p.title}</h3><p className="text-sm text-ink/60">{p.category}</p><span className="mt-2 inline-block text-xs font-semibold tracking-widest text-[#8a6d12]">VOIR LE PROJET &rarr;</span></button>)}</div>
     {sel && <div className="fixed inset-0 z-[70] bg-ink/95 text-bone overflow-y-auto p-5" onClick={()=>setSel(null)} role="dialog">
       <div className="max-w-2xl mx-auto mt-10" onClick={e=>e.stopPropagation()}>
         <button className="btn btn-line mb-4" onClick={()=>setSel(null)}>Fermer</button>
