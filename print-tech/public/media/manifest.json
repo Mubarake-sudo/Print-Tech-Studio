@@ -1,0 +1,46 @@
+{
+  "images": [
+    "/media/optimized/images/apres-enseigne-chez-maliya.webp",
+    "/media/optimized/images/apres-facade-broderie-elephant.webp",
+    "/media/optimized/images/apres-vitrine-la-baguette-dor.webp",
+    "/media/optimized/images/avant-enseigne-chez-maliya.webp",
+    "/media/optimized/images/avant-facade-broderie-elephant.webp",
+    "/media/optimized/images/avant-vitrine-la-baguette-dor.webp",
+    "/media/optimized/images/enseigne-lumineuse-pharmacie-bingerville.webp",
+    "/media/optimized/images/enseigne-neon-led-k-lounge.webp",
+    "/media/optimized/images/habillage-facade-alucobond-foodivoire.webp",
+    "/media/optimized/images/habillage-vitrine-raffinement-boutique.webp",
+    "/media/optimized/images/lettres-3d-decoupe-cnc-maison-sanaa.webp",
+    "/media/optimized/images/totem-publicitaire-grand-format-marjorel.webp"
+  ],
+  "videos": [
+    {
+      "src": "/media/optimized/videos/v1.mp4",
+      "poster": "/media/optimized/videos/v1.jpg"
+    },
+    {
+      "src": "/media/optimized/videos/v2.mp4",
+      "poster": "/media/optimized/videos/v2.jpg"
+    },
+    {
+      "src": "/media/optimized/videos/v3.mp4",
+      "poster": "/media/optimized/videos/v3.jpg"
+    },
+    {
+      "src": "/media/optimized/videos/v4.mp4",
+      "poster": "/media/optimized/videos/v4.jpg"
+    },
+    {
+      "src": "/media/optimized/videos/v5.mp4",
+      "poster": "/media/optimized/videos/v5.jpg"
+    },
+    {
+      "src": "/media/optimized/videos/v6.mp4",
+      "poster": "/media/optimized/videos/v6.jpg"
+    },
+    {
+      "src": "/media/optimized/videos/v7.mp4",
+      "poster": "/media/optimized/videos/v7.jpg"
+    }
+  ]
+}

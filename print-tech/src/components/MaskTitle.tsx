@@ -6,9 +6,22 @@ export default function MaskTitle({ text, as:Tag="h2", className="", accent="" }
   const ref = useRef<HTMLHeadingElement>(null);
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      gsap.set(".w", { yPercent: 0 });
+      return;
+    }
     const ctx = gsap.context(() => {
-      gsap.fromTo(".w", { yPercent:105 }, { yPercent:0, duration:1.1, ease:"expo.out", stagger:0.05, scrollTrigger:{ trigger:ref.current, start:"top 88%" } });
+      gsap.fromTo(
+        ".w",
+        { yPercent: 105 },
+        {
+          yPercent: 0,
+          duration: 1.1,
+          ease: "expo.out",
+          stagger: 0.05,
+          scrollTrigger: { trigger: ref.current, start: "top 88%" },
+        }
+      );
     }, ref);
     return () => ctx.revert();
   }, []);

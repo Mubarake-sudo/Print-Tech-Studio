@@ -62,4 +62,5 @@ for (const f of files) {
   } catch (e) { console.warn("ECHEC", f, e.message); }
 }
 await fs.writeFile("public/media/optimized/manifest.json", JSON.stringify(manifest, null, 2));
-console.log(`Terminé : ${manifest.images.length} image(s), ${manifest.videos.length} vidéo(s). Voir public/media/optimized/manifest.json`);
+await fs.writeFile("public/media/manifest.json", JSON.stringify(manifest, null, 2));
+console.log(`Terminé : ${manifest.images.length} image(s), ${manifest.videos.length} vidéo(s). Voir public/media/optimized/manifest.json et public/media/manifest.json`);

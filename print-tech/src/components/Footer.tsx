@@ -7,7 +7,7 @@ export default function Footer() {
   return <footer id="contact" className="bg-[#050507] border-t border-white/10 px-5 lg:px-10 pt-20 pb-8">
     <div className="rounded-3xl border border-gold/30 bg-ink p-8 md:p-12 flex flex-col lg:flex-row lg:items-center justify-between gap-8">
       <div><h2 className="h2">Parlons de votre projet.</h2><p className="lead mt-3 max-w-xl">Un devis rapide, sans engagement : écrivez-nous sur WhatsApp ou appelez-nous.</p></div>
-      <div className="flex flex-wrap gap-3">{siteConfig.phones.map(p=><a key={p.wa} href={waLink(p.wa)} className="btn btn-gold"><MessageCircle size={18}/>{p.short}</a>)}</div>
+      <div className="flex flex-wrap gap-3">{siteConfig.phones.map(p=><a key={p.wa} href={waLink(p.wa)} target="_blank" rel="noopener noreferrer" className="btn btn-gold"><MessageCircle size={18}/>{p.short}</a>)}</div>
     </div>
     <div className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
       <div className="space-y-5"><Logo className="h-20 w-auto"/><p className="text-sm text-[#D1D5DB] max-w-xs">Communication visuelle, imprimerie grand format, signalétique et enseignes lumineuses à Abidjan.</p>

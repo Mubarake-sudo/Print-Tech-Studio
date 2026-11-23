@@ -10,13 +10,24 @@ export default function Savoir() {
   const ref = useRef<HTMLElement>(null);
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      gsap.set(".lg-line", { strokeDashoffset: 0 });
+      gsap.set(".lg-fill", { opacity: 1 });
+      return;
+    }
     const ctx = gsap.context(() => {
-      gsap.set(".lg-line", { strokeDasharray:1, strokeDashoffset:1 });
-      gsap.set(".lg-fill", { opacity:0 });
-      gsap.timeline({ scrollTrigger:{ trigger:".lg-wrap", start:"top 80%", end:"bottom 45%", scrub:1 } })
-        .to(".lg-line", { strokeDashoffset:0, ease:"none", stagger:0.25, duration:1 })
-        .to(".lg-fill", { opacity:1, ease:"none", stagger:0.1, duration:0.5 }, ">-0.2");
+      gsap.set(".lg-line", { strokeDasharray: 1, strokeDashoffset: 1, willChange: "stroke-dashoffset" });
+      gsap.set(".lg-fill", { opacity: 0, willChange: "opacity" });
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: ".lg-wrap",
+          start: "top 80%",
+          end: "bottom 45%",
+          scrub: 1,
+        },
+      })
+        .to(".lg-line", { strokeDashoffset: 0, ease: "none", stagger: 0.25, duration: 1 })
+        .to(".lg-fill", { opacity: 1, ease: "none", stagger: 0.1, duration: 0.5 }, ">-0.2");
     }, ref);
     return () => ctx.revert();
   }, []);

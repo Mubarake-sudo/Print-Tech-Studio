@@ -8,11 +8,27 @@ export default function Hero() {
   const [video,setVideo] = useState(false);
   return <section id="top" className="relative bg-ink overflow-hidden md:h-[clamp(560px,46vw,800px)]">
     <div className="relative aspect-[5/4] sm:aspect-[16/9] md:absolute md:inset-0 md:aspect-auto">
-      <Image src="/images/hero-mobile.webp" alt="Façade PRINT-TECH STUDIO la nuit" fill sizes="100vw" fetchPriority="high" className="md:hidden object-cover object-[66%_50%]"/>
-      <Image src="/images/hero.webp" alt="Façade Alucobond avec enseigne lumineuse PRINT-TECH STUDIO" fill sizes="100vw" fetchPriority="high" className="hidden md:block object-cover object-[center_36%]"/>
-      <div className="absolute inset-0 md:hidden bg-gradient-to-t from-ink via-ink/20 to-ink/50"/>
-      <div className="absolute inset-y-0 left-0 hidden md:block w-[58%] bg-gradient-to-r from-ink via-ink/80 to-transparent"/>
-      <div className="absolute inset-x-0 top-0 h-32 hidden md:block bg-gradient-to-b from-ink/70 to-transparent"/>
+      <Image
+        src="/images/hero-mobile.webp"
+        alt="Façade PRINT-TECH STUDIO illuminée la nuit à Abidjan"
+        fill
+        sizes="100vw"
+        priority
+        fetchPriority="high"
+        className="md:hidden object-cover object-[66%_50%]"
+      />
+      <Image
+        src="/images/hero.webp"
+        alt="Façade Alucobond avec enseigne lumineuse moderne PRINT-TECH STUDIO"
+        fill
+        sizes="100vw"
+        priority
+        fetchPriority="high"
+        className="hidden md:block object-cover object-[center_36%]"
+      />
+      <div className="absolute inset-0 md:hidden bg-gradient-to-t from-ink via-ink/20 to-ink/50" />
+      <div className="absolute inset-y-0 left-0 hidden md:block w-[58%] bg-gradient-to-r from-ink via-ink/80 to-transparent" />
+      <div className="absolute inset-x-0 top-0 h-32 hidden md:block bg-gradient-to-b from-ink/70 to-transparent" />
     </div>
     <div className="relative z-10 -mt-20 px-5 pb-12 sm:-mt-32 md:mt-0 md:h-full md:flex md:items-center md:px-10 md:pb-0 md:pt-20">
       <div className="max-w-[640px] border-l border-gold/60 pl-5 md:pl-8">

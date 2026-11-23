@@ -12,8 +12,8 @@ export const siteConfig = {
     tiktok:"https://www.tiktok.com/@printtechstudio",
     instagram:"https://www.instagram.com/studioprinttech?lqvp=MWg0ZHVpemxrZWtkNg==",
   },
-  heroVideo:"", // ex : "/media/optimized/videos/presentation.mp4" (+ heroPoster) pour activer "Voir la vidéo"
-  heroPoster:"/images/hero.webp",
+  heroVideo:"/media/optimized/videos/v1.mp4",
+  heroPoster:"/media/optimized/videos/v1.jpg",
   defaultMessage:"Bonjour PRINT-TECH STUDIO, je souhaite un devis pour un projet de communication visuelle / signalétique.",
 };
 export const waLink = (wa:string, msg:string = siteConfig.defaultMessage) => `https://wa.me/${wa}?text=${encodeURIComponent(msg)}`;

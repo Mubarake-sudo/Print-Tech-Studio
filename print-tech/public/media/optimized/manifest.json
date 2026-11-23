@@ -13,5 +13,34 @@
     "/media/optimized/images/lettres-3d-decoupe-cnc-maison-sanaa.webp",
     "/media/optimized/images/totem-publicitaire-grand-format-marjorel.webp"
   ],
-  "videos": []
+  "videos": [
+    {
+      "src": "/media/optimized/videos/v1.mp4",
+      "poster": "/media/optimized/videos/v1.jpg"
+    },
+    {
+      "src": "/media/optimized/videos/v2.mp4",
+      "poster": "/media/optimized/videos/v2.jpg"
+    },
+    {
+      "src": "/media/optimized/videos/v3.mp4",
+      "poster": "/media/optimized/videos/v3.jpg"
+    },
+    {
+      "src": "/media/optimized/videos/v4.mp4",
+      "poster": "/media/optimized/videos/v4.jpg"
+    },
+    {
+      "src": "/media/optimized/videos/v5.mp4",
+      "poster": "/media/optimized/videos/v5.jpg"
+    },
+    {
+      "src": "/media/optimized/videos/v6.mp4",
+      "poster": "/media/optimized/videos/v6.jpg"
+    },
+    {
+      "src": "/media/optimized/videos/v7.mp4",
+      "poster": "/media/optimized/videos/v7.jpg"
+    }
+  ]
 }
