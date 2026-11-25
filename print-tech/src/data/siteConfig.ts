@@ -2,6 +2,8 @@
 export const siteConfig = {
   name:"PRINT-TECH STUDIO", owner:"Abdullah Issah",
   address:"Marcory Sans Fil au Palmier, Abidjan, Côte d'Ivoire",
+  googleMapsUrl:"https://maps.google.com/maps?q=5.311760425567627%2C-3.9621269702911377&z=17&hl=fr",
+  googleMapsEmbedUrl:"https://google.com",
   email:"Abdullahissah63@gmail.com",
   phones:[
     { label:"+225 07 19 55 55 70", tel:"+2250719555570", wa:"2250719555570", short:"07 19 55 55 70" },
