@@ -30,22 +30,24 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://printtechstudio.ci"),
   title: "PRINT-TECH STUDIO | Enseignes lumineuses, façades Alucobond, CNC & laser à Abidjan",
   description:
-    "PRINT-TECH STUDIO à Abidjan : atelier spécialisé en enseignes lumineuses, habillage de façades Alucobond, découpe CNC/laser, lettres 3D et impression grand format.",
+    "PRINT-TECH STUDIO à Abidjan : atelier spécialisé en enseignes lumineuses, habillage de façades Alucobond, découpe CNC/laser, lettres 3D, décoration intérieure et impression grand format.",
   authors: [{ name: "Abdullah Issah - PRINT-TECH STUDIO" }],
   keywords: [
     "enseigne lumineuse",
     "Alucobond",
     "lettres 3D",
     "découpe CNC",
+    "décoration intérieure",
+    "habillage mural design",
     "signalétique Abidjan",
     "imprimerie grand format",
     "façade commerciale Côte d'Ivoire",
     "PRINT-TECH STUDIO",
   ],
   openGraph: {
-    title: "PRINT-TECH STUDIO | Signalétique d'exception et habillage de façades",
+    title: "PRINT-TECH STUDIO | Signalétique d'exception, façades & décoration intérieure",
     description:
-      "Atelier d'excellence à Abidjan : enseignes lumineuses, façades composites Alucobond, découpe CNC et impression grand format.",
+      "Atelier d'excellence à Abidjan : enseignes lumineuses, façades composites Alucobond, découpe CNC, décoration intérieure et impression grand format.",
     type: "website",
     locale: "fr_CI",
     images: [

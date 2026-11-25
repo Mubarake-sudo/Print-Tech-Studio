@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="flex flex-wrap gap-3">{siteConfig.phones.map(p=><a key={p.wa} href={waLink(p.wa)} target="_blank" rel="noopener noreferrer" className="btn btn-gold"><MessageCircle size={18}/>{p.short}</a>)}</div>
     </div>
     <div className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-      <div className="space-y-5"><Logo className="h-20 w-auto"/><p className="text-sm text-[#D1D5DB] max-w-xs">Communication visuelle, imprimerie grand format, signalétique et enseignes lumineuses à Abidjan.</p>
+      <div className="space-y-5"><Logo className="h-20 w-auto"/><p className="text-sm text-[#D1D5DB] max-w-xs">Communication visuelle, imprimerie grand format, signalétique, décoration intérieure et enseignes lumineuses à Abidjan.</p>
         <div className="flex gap-3">{social.map(([n,h,i])=><a key={n} href={h} aria-label={n} target="_blank" rel="noopener noreferrer" className="w-11 h-11 rounded-full border border-gold/50 grid place-items-center text-gold transition-colors duration-500 hover:bg-gold hover:text-ink">{i}</a>)}</div></div>
       <div><h3 className="eyebrow text-gold2 mb-4">Navigation</h3><ul className="space-y-1">{navLinks.map(([l,id])=><li key={id}><a href={`#${id}`} className="inline-flex min-h-[36px] items-center text-[#D1D5DB] hover:text-gold2">{l}</a></li>)}</ul></div>
       <div><h3 className="eyebrow text-gold2 mb-4">Téléphone</h3><ul className="space-y-2">{siteConfig.phones.map(p=><li key={p.tel}><a href={`tel:${p.tel}`} className="inline-flex min-h-[44px] items-center gap-2 text-[#D1D5DB] hover:text-gold2"><Phone size={16}/>{p.label}</a></li>)}</ul></div>

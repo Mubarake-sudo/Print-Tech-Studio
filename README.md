@@ -1,6 +1,6 @@
 # PRINT-TECH STUDIO — Portfolio & Vitrine Haute Performance
 
-> **Atelier d'excellence à Abidjan** : enseignes lumineuses, habillage de façades composites Alucobond, découpe numérique CNC & laser, lettres 3D en relief, signalétique et impression grand format.
+> **Atelier d'excellence à Abidjan** : enseignes lumineuses, habillage de façades composites Alucobond, découpe numérique CNC & laser, lettres 3D en relief, décoration intérieure, signalétique et impression grand format.
 
 ---
 

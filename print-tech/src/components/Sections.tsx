@@ -5,7 +5,7 @@ export function About() {
     <div><p className="text-gold2 tracking-[.25em] text-xs mb-4">À PROPOS</p>
       <MaskTitle className="h2" text="Un studio d'Abidjan pour les marques qui veulent se faire voir."/></div>
     <div className="space-y-5 text-white/75">
-      <p>{siteConfig.name} accompagne commerces, entreprises et institutions dans la création de leur image : conception graphique, impression grand format, signalétique et habillage de façades.</p>
+      <p>{siteConfig.name} accompagne commerces, entreprises et institutions dans la création de leur image : conception graphique, impression grand format, signalétique, décoration intérieure et habillage de façades.</p>
       <p>Dirigé par {siteConfig.owner}, le studio maîtrise l'ensemble de la chaîne, du dessin sur Adobe Illustrator et Photoshop à la découpe CNC et laser, jusqu'à la pose sur site.</p>
       <p className="text-gold2">Alucobond, plexiglas, acrylique, LED : des matériaux choisis pour durer sous le climat d'Abidjan.</p>
     </div>

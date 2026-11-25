@@ -1,5 +1,5 @@
-export type Category = "Enseignes lumineuses" | "Façades Alucobond" | "Lettres 3D & CNC" | "Vitrines & Panneaux";
-export const categories: Category[] = ["Enseignes lumineuses", "Façades Alucobond", "Lettres 3D & CNC", "Vitrines & Panneaux"];
+export type Category = "Enseignes lumineuses" | "Façades Alucobond" | "Lettres 3D & CNC" | "Vitrines & Panneaux" | "Décoration intérieure";
+export const categories: Category[] = ["Enseignes lumineuses", "Façades Alucobond", "Lettres 3D & CNC", "Vitrines & Panneaux", "Décoration intérieure"];
 
 export type Media =
   | { type: "image"; src: string; alt?: string }
@@ -221,8 +221,8 @@ export const projects: Project[] = [
   {
     id: "enseigne-neon-led-k-lounge",
     title: "Enseigne Néon LED K-Lounge",
-    subtitle: "Création artistique néon flexible silicone & variateur d'ambiance",
-    category: "Enseignes lumineuses",
+    subtitle: "Création artistique néon flexible silicone & décoration murale d'ambiance",
+    category: "Décoration intérieure",
     location: "Marcory / Zone 4, Abidjan (Côte d'Ivoire)",
     materials: [
       "Néon flexible LED silicone nouvelle génération (flex neon 12V)",

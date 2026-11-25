@@ -14,7 +14,7 @@ export const siteConfig = {
   },
   heroVideo:"/media/optimized/videos/v1.mp4",
   heroPoster:"/media/optimized/videos/v1.jpg",
-  defaultMessage:"Bonjour PRINT-TECH STUDIO, je souhaite un devis pour un projet de communication visuelle / signalétique.",
+  defaultMessage:"Bonjour PRINT-TECH STUDIO, je souhaite un devis pour un projet d'enseigne, façade, décoration intérieure ou signalétique.",
 };
 export const waLink = (wa:string, msg:string = siteConfig.defaultMessage) => `https://wa.me/${wa}?text=${encodeURIComponent(msg)}`;
 export const navLinks = [["Accueil","top"],["À propos","a-propos"],["Expertise","expertise"],["Réalisations","realisations"],["Processus","processus"],["Pourquoi nous choisir ?","pourquoi"],["Contact","contact"]];
