@@ -107,10 +107,14 @@ export function Contact() {
           <div className="relative aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden rounded-2xl border border-gold/40 shadow-inner">
             <iframe
               src={siteConfig.googleMapsEmbedUrl}
-              className="w-full h-full border-0"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="Localisation PRINT-TECH STUDIO Abidjan"
+              className="w-full h-full"
             />
           </div>
 
