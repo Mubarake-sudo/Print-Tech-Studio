@@ -256,6 +256,133 @@ export const projects: Project[] = [
         alt: "Enseigne lumineuse néon LED d'ambiance pour K-Lounge par PRINT-TECH STUDIO"
       }
     ]
+  },
+  {
+    id: "panneau-publicitaire-grand-format",
+    title: "Panneau Publicitaire Grand Format",
+    subtitle: "Conception graphique, impression numérique & pose sur structure métallique",
+    category: "Enseignes lumineuses",
+    location: "Abidjan, Côte d'Ivoire",
+    materials: [
+      "Bâche PVC frontlit 510 g/m² haute résistance UV",
+      "Structure métallique tubulaire acier galvanisé à chaud",
+      "Encres éco-solvants grand format certifiées extérieur 5 ans",
+      "Cadre aluminium profilé avec tendeurs à cliquet"
+    ],
+    techniques: [
+      "Conception graphique et mise en page vectorielle haute définition",
+      "Impression numérique grand format résolution 720 DPI",
+      "Soudage et montage de la structure porteuse sur site",
+      "Pose tendue avec œillets renforcés et sandows de fixation"
+    ],
+    description:
+      "Conception graphique intégrale, impression numérique grand format et installation d'un panneau publicitaire monumental sur structure métallique autoportante à Abidjan. Ce dispositif d'affichage extérieur offre une visibilité commerciale maximale sur un axe à fort trafic, avec des couleurs éclatantes et une durabilité éprouvée face aux conditions climatiques tropicales.",
+    challenge:
+      "Garantir un rendu chromatique fidèle et une résistance aux intempéries sur une surface d'impression de grande envergure, tout en assurant la stabilité structurelle face aux vents et pluies de la saison tropicale.",
+    solution:
+      "Utilisation d'une bâche PVC frontlit haute densité avec traitement anti-UV, tendue sur un châssis métallique renforcé par des contreventements triangulés, garantissant une tenue impeccable sur plusieurs années.",
+    highlights: [
+      "Visibilité percutante jour et nuit sur axe à fort passage",
+      "Résistance aux intempéries tropicales (pluie, chaleur, UV)",
+      "Rendu chromatique fidèle et couleurs éclatantes longue durée",
+      "Structure autoportante conforme aux normes de sécurité urbaine"
+    ],
+    image: "/media/optimized/images/real-enseigne-panneau-publicitaire-01.webp",
+    media: [
+      {
+        type: "image",
+        src: "/media/optimized/images/real-enseigne-panneau-publicitaire-01.webp",
+        alt: "Panneau publicitaire grand format sur structure métallique à Abidjan par PRINT-TECH STUDIO"
+      },
+      {
+        type: "image",
+        src: "/media/optimized/images/real-enseigne-panneau-publicitaire-02.webp",
+        alt: "Détail de l'impression grand format et de la structure métallique du panneau publicitaire PRINT-TECH STUDIO"
+      }
+    ]
+  },
+  {
+    id: "trophees-acrylique-gravure-laser",
+    title: "Trophées sur Mesure en Acrylique & Gravure Laser",
+    subtitle: "Découpe CNC/laser haute précision sur plexiglas & finitions événementielles",
+    category: "Lettres 3D & CNC",
+    location: "Abidjan, Côte d'Ivoire",
+    materials: [
+      "Plexiglas acrylique coulé cristal épaisseur 10 à 20 mm",
+      "Plaques acrylique teintées or, argent et bronze métallisé",
+      "Socles en bois noble verni ou acrylique noir poli miroir",
+      "Inserts métalliques gravés pour personnalisation nominative"
+    ],
+    techniques: [
+      "Découpe laser CO₂ haute précision au dixième de millimètre",
+      "Gravure laser vectorielle et tramage photo-réaliste",
+      "Polissage à la flamme des chants pour transparence optique",
+      "Assemblage par collage UV invisible et finition manuelle"
+    ],
+    description:
+      "Conception et fabrication sur mesure de trophées et récompenses en acrylique haute qualité par découpe CNC et gravure laser de précision. Chaque pièce est usinée au dixième de millimètre sur plexiglas cristal, avec des finitions soignées dignes de cérémonies de prestige : galas, remises de prix, événements corporate et compétitions sportives.",
+    challenge:
+      "Atteindre un niveau de finition irréprochable sur des géométries complexes et des détails typographiques fins, tout en garantissant une transparence cristalline sans éclats ni micro-fissures sur les chants.",
+    solution:
+      "Paramétrage optimisé du laser CO₂ avec passes multiples à puissance dégressive, suivi d'un polissage thermique à la flamme pour obtenir des chants parfaitement transparents et des gravures d'une netteté exceptionnelle.",
+    highlights: [
+      "Précision de découpe au 1/10ᵉ de millimètre",
+      "Gravure laser photo-réaliste et personnalisation nominative",
+      "Finition cristalline sans éclats grâce au polissage à la flamme",
+      "Adaptées aux galas, remises de prix et événements corporate"
+    ],
+    image: "/media/optimized/images/real-lettres-trophees-acrylique-01.webp",
+    media: [
+      {
+        type: "image",
+        src: "/media/optimized/images/real-lettres-trophees-acrylique-01.webp",
+        alt: "Trophées sur mesure en acrylique découpés au laser par PRINT-TECH STUDIO"
+      },
+      {
+        type: "image",
+        src: "/media/optimized/images/real-lettres-trophees-acrylique-02.webp",
+        alt: "Détail de la gravure laser et des finitions sur trophée acrylique PRINT-TECH STUDIO"
+      }
+    ]
+  },
+  {
+    id: "habillage-vitrophanie-vitrine-plateau",
+    title: "Habillage & Vitrophanie de Vitrine — Le Plateau",
+    subtitle: "Décoration de vitrine commerciale en vinyle adhésif haute durabilité",
+    category: "Vitrines & Panneaux",
+    location: "Le Plateau, Abidjan (Côte d'Ivoire)",
+    materials: [
+      "Vinyle adhésif polymère coulé haute durabilité 7 ans",
+      "Film dépoli sablé pour intimité et esthétique",
+      "Lamination protectrice anti-UV et anti-rayures",
+      "Vinyle micro-perforé pour vitrage arrière (voir-à-travers)"
+    ],
+    techniques: [
+      "Conception graphique et mise en page vectorielle sur mesure",
+      "Découpe numérique de précision sur plotter professionnel",
+      "Pose humide sans bulle d'air avec raclette professionnelle",
+      "Finition des contours au cutter de précision pour un rendu net"
+    ],
+    description:
+      "Habillage graphique complet et vitrophanie sur mesure pour une vitrine commerciale au cœur du Plateau, quartier d'affaires d'Abidjan. Le vinyle adhésif haute durabilité transforme la devanture en un véritable support de communication visuelle, alliant esthétique premium, protection solaire et visibilité commerciale renforcée pour attirer la clientèle de passage.",
+    challenge:
+      "Garantir une adhérence parfaite et sans bulle sur de grandes surfaces vitrées exposées au soleil intense, tout en préservant la luminosité intérieure du commerce.",
+    solution:
+      "Application de vinyle polymère coulé avec technique de pose humide professionnelle, combinée à une lamination anti-UV qui protège les couleurs et assure une tenue impeccable pendant plus de 5 ans.",
+    highlights: [
+      "Transformation visuelle immédiate de la devanture commerciale",
+      "Vinyle haute durabilité résistant aux UV et intempéries (7 ans)",
+      "Pose sans bulle grâce à la technique professionnelle humide",
+      "Attractivité commerciale renforcée au cœur du Plateau"
+    ],
+    image: "/media/optimized/images/real-vitrine-boutique-plateau-01.webp",
+    media: [
+      {
+        type: "image",
+        src: "/media/optimized/images/real-vitrine-boutique-plateau-01.webp",
+        alt: "Habillage et vitrophanie de vitrine commerciale au Plateau Abidjan par PRINT-TECH STUDIO"
+      }
+    ]
   }
 ];
 
